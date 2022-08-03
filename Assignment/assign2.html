@@ -1,49 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        .container1{
-            height: 100vh;
-            background-image: url("../assets/wallpapersden.com_waves-sea_3840x2160.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            justify-content: center;
-            text-align: center;
+      * {
+        box-sizing: border-box;
+      }
+      .container1 {
+        height: 100vh;
+        display: flex;
+        background-image: url("../assets/wallpapersden.com_waves-sea_3840x2160.jpg");
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2px;;
+      }
+      .center {
+        text-align: center;
+        color: whitesmoke;
+        height: fit-content;
+       
+      }
 
-        }
-        #sec1{
-            width: 33.33%;
-            background-color: aquamarine;
-            float: left;
-        }
-        #sec2{
-            width: 33.33%;
-            float: left;
-            background-color: antiquewhite;
-        }
-        #sec3{
-            width: 33.33%;
-            float: left;
-            background-color: aquamarine;
-        }
-    </style>
-</head>
-<body>
+      .btn{
+        background-color: transparent;
+        color: whitesmoke;
+        padding: 6px 10px;
+        border: 1px solid whitesmoke;
+        border-radius: 6px;
+      }
+      .btn:hover{
+        background: linear-gradient(to right, #642b73, #c6426e);
+      }
+      /* box css */
+      /* 2 part */
+      .box1{
+        color: whitesmoke;
+        background-color:#642b73;
+      }
+      .box2{
+       color: whitesmoke;
+        background-color:#e7a5bb;
+      }
+
+
+      #sec1 {
+        width: 33.33%;
     
+        float: left;
+      }
+      #sec2 {
+        width: 33.33%;
+        float: left;
+        
+      }
+      #sec3 {
+        width: 33.33%;
+        float: left;
+        
+      }
+
+      /* footer */
+      
+    </style>
+  </head>
+  <body>
     <div class="container1">
-        <!-- <img src="../assets/wallpapersden.com_waves-sea_3840x2160.jpg" alt=""> -->
-        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span>
+      <!-- <img src="../assets/wallpapersden.com_waves-sea_3840x2160.jpg" alt=""> -->
+      <div class="center">
+        <h1>Welcome To The Beach</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eum quod perferen</p>
+        <button class="btn" onclick="window.location.href='http://www.google.com'">Google</button>
+      </div>
     </div>
     <div class="container2">
-        <div class="box1" >BOX - 1</div>
-        <div class="box2">BOX - 2</div>
-        <div class="box1" id="sec1">BOX - 3</div>
-        <div class="box2" id="sec2">BOX - 4</div>
-        <div class="box1" id="sec3">BOX - 4</div>
+      <div class="box1" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa vero voluptatem tenetur incidunt, nisi itaque saepe alias? Mollitia minima dolor similique rem nesciunt, corporis nulla. Nostrum doloremque autem eligendi esse, velit animi? Voluptatem, ex quia illum officiis eos vel, sapiente odit vitae unde, recusandae assumenda temporibus quidem modi sed ab dolor eum? Odio nihil nisi, iste eius voluptates beatae, voluptatibus soluta eos quidem repellat sed deleniti eveniet maiores inventore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid facere rerum magni reiciendis nesciunt. Reiciendis facilis laboriosam eum quo est?</div>
+      <div class="box2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, quasi quibusdam! Dicta, ullam? Dolore architecto, illo tempora corporis ex cumque similique quibusdam, qui commodi corrupti deserunt, fuga quam nisi perspiciatis quo sapiente ullam? Quas tempora voluptas aperiam nobis neque a dolorum blanditiis id dolores ipsa natus unde, et tenetur ipsum sit magni eum illum, sed earum saepe voluptates laborum. Incidunt optio sunt voluptas vel facere sequi excepturi nesciunt reprehenderit atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, maxime nam beatae aliquam tenetur error facilis! Voluptate nisi corrupti mollitia!</div>
+      <div class="box1" id="sec1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi temporibus amet, iure hic error culpa tenetur. Earum numquam ea aliquam vitae veniam repellendus accusantium itaque doloremque quia tempore natus delectus quis dignissimos suscipit accusamus dicta tenetur, ut expedita ipsum maiores. Amet fugiat velit architecto omnis natus suscipit ratione asperiores possimus.</div>
+      <div class="box2" id="sec2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi temporibus amet, iure hic error culpa tenetur. Earum numquam ea aliquam vitae veniam repellendus accusantium itaque doloremque quia tempore natus delectus quis dignissimos suscipit accusamus dicta tenetur, ut expedita ipsum maiores. Amet fugiat velit architecto omnis natus suscipit ratione asperiores possimus.</div>
+      <div class="box1" id="sec3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi temporibus amet, iure hic error culpa tenetur. Earum numquam ea aliquam vitae veniam repellendus accusantium itaque doloremque quia tempore natus delectus quis dignissimos suscipit accusamus dicta tenetur, ut expedita ipsum maiores. Amet fugiat velit architecto omnis natus suscipit ratione asperiores possimus.</div>
     </div>
-</body>
+   
+  </body>
 </html>

@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.container{
+    border: 2px solid black;
+    
+}
+/* header and navbar */
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/ingenuity.png");
+    background-size: cover;
+}
+header nav{
+    overflow: hidden;
+    background-color:#333;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+header nav a{
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 22px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight:700;
+}
+header nav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+header nav a.active{
+    background-color: seagreen;
+    color: whitesmoke;
+}
+
+
+/* team */
+
+section{
+    border: 2px solid black;
+    background-color: #333;    
+}
+.imgsec{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fitem{
+    margin: 10px;
+    width: 240px;
+    height: 250px;
+    background-color: #ddd;
+    border-radius: 50%;
+   
+}
+
+
+#about{
+    display: flex;
+
+}
+
+#about main{
+    height: 60vh;
+    width: 39%;
+    background-color: bisque;
+}
+
+#about aside{
+    /* display: flex; */
+    margin-left: 2px;
+    width: 59%
+}
+#about aside .fbox{
+    margin: 2px;
+    height: 32.66%;
+    background-color: aqua;
+}
+
+
+/* technology */
+
+.fcards{
+display: flex;
+}
+
+.fitem-rect{
+    height: 65vh;
+    /* width: ; */
+    background-color: #f2f2f2;
+}

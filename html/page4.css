@@ -17,6 +17,7 @@ header{
 }
 section{
     border: 2px solid black;
+    
 }
 article{
     background-color: bisque;
@@ -27,7 +28,7 @@ article{
 }
 
 .imgsec {
-    /* border: 2px solid black; */
+    
     display: flex;
     justify-content: space-evenly;
     /* flex-direction: column; */

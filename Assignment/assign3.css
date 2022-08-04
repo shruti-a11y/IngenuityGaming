@@ -30,13 +30,15 @@ header nav{
     width: 100%;
 
 }
-
+a{
+    text-decoration: none;
+}
 header nav a{
     color: #f2f2f2;
     text-align: center;
     padding: 20px 22px;
     margin-right: 10px;
-    text-decoration: none;
+    
     font-size: 17px;
     font-weight:700;
 }
@@ -98,10 +100,45 @@ section{
 
 .fcards{
 display: flex;
+justify-content: space-around;
+padding: 10px;
+
 }
 
 .fitem-rect{
-    height: 65vh;
-    /* width: ; */
-    background-color: #f2f2f2;
+    width: 300px;
+    height: 400px;
+    background-color: powderblue;
+    overflow: hidden;
+    padding: 20px;
+    margin-right: 20px;
+    text-align: justify;
+    margin-bottom: 10px;
+    border-radius: 15px
 }
+
+/* cards */
+.rect img{
+    width: 100%;
+    height: 150px;
+    border-radius: 20px;
+    }
+    .rect h2{
+        text-align: center;
+        margin: 10px;
+    }
+    .myButton{
+        /* block properties */
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: mediumvioletred;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+    .myButton:hover{
+        background-color: seagreen;
+    }

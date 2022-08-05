@@ -5,6 +5,8 @@ html {
 *{
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Anton', sans-serif;
+font-family: 'Dancing Script', cursive;
 }
 
 h1{
@@ -14,11 +16,6 @@ h1{
     color: #333;
 }
 
-.container{
-    /* border: 2px solid black; */
-    /* background-color: rgb(192,235,206); */
-    
-}
 /* header and navbar */
 header{
     width: 100%;
@@ -27,21 +24,29 @@ header{
     background-size: cover;
 }
 header nav{
-    overflow: hidden;
-    background-color:#333;
+    /* overflow: hidden; */
+    background-color:whitesmoke;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+    padding: 0 20px;
     align-items: center;
     position: fixed;
     top: 0;
     width: 100%;
+}
+header nav .menu{
+
+    display: flex;
+    
 
 }
+
+
 a{
     text-decoration: none;
 }
 header nav a{
-    color: #f2f2f2;
+    color: #333;
     text-align: center;
     padding: 20px 22px;
     margin-right: 10px;
@@ -69,15 +74,17 @@ section{
     background-color: #333;    
     
 }
-section #team{
-    display: flex; 
+
+section#team {
+    display: inline-flex;
     flex-direction: column;
-    background-color: aqua;
-    color: aquamarine;
+    height: 50vh;
+    
 }
 section .text{
-    width: 70%;
-    margin: 4px;
+    width: 60%;
+    margin: 10px;
+    font-size: 18px;
     align-self: center;
     text-align: center;
     color: #f2f2f2;
@@ -209,14 +216,228 @@ padding: 10px;
     }
     .myButton:hover{
         background-color: seagreen;
+        transform: scale(2px);
     }
 
     /* footer */
 
-    footer{
+    /* footer{
         height: 10vh;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: goldenrod;
-    }
+    } */
+    
+
+
+    footer
+{
+    margin-top: 20px;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+}
+.section-1
+{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgb(44, 44, 44);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.about
+{
+    width: 40%;
+    margin: 0 15px;
+}
+.about h2
+{
+    color: white;
+    text-transform: uppercase;
+}
+.about p 
+{
+    color: gray;
+    text-align: justify;
+    line-height: 25px;
+}
+.category
+{
+    width: 20%;
+}
+.category h2
+{
+    color: white;
+    text-transform: uppercase;
+}
+.category ul
+{
+    list-style: none;
+}
+.category ul li
+{
+    padding: 1px;
+    margin-bottom: 5px;
+}
+.category ul li a
+{
+    text-decoration: none;
+    text-transform:capitalize;
+    color: gray;
+}
+.quicklinks
+{
+    width: 20%;
+}
+.quicklinks h2
+{
+    color: white;
+    text-transform: uppercase;
+}
+.quicklinks ul
+{
+    list-style: none;
+}
+.quicklinks ul li
+{
+    padding: 1px;
+    margin-bottom: 5px;
+}
+.quicklinks ul li a
+{
+    text-decoration: none;
+    text-transform:capitalize;
+    color: gray;
+}
+.contactus
+{
+    width: 26%;
+}
+.contactus h2
+{
+    color: white;
+    text-transform: uppercase;
+}
+.contactus ul
+{
+    list-style: none;
+}
+.contactus ul li
+{
+    padding: 1px;
+    margin-bottom: 5px;
+}
+.contactus ul li a
+{
+    text-decoration: none;
+    text-transform:capitalize;
+    color: gray;
+}
+.contactus ul li i
+{
+    color: gray;
+    margin-right: 5px;
+}
+.section-2
+{
+border-bottom: 1px solid rgb(44, 44, 44);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.section-2 p
+{
+    text-align: center;
+    color: gray;
+    font-size: 30px;
+    margin: 30px;
+}
+.section-2 p a
+{
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 35px;
+}
+.section-3 ul
+{
+    display: flex;
+    justify-content: center;
+}
+.section-3 ul li
+{
+    list-style: none;
+    margin: 15px 30px;
+}
+.section-3 ul li a
+{
+    text-decoration: none;
+}
+.section-3 ul li a i
+{
+    color: gray;
+    width: 70px;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+.fa-facebook:hover
+{
+    background-color: blue;
+    color: white;
+}
+.fa-twitter:hover
+{
+    background-color: skyblue;
+    color: white;
+}
+.fa-google:hover
+{
+    background-color:red;
+    color: white;
+}
+.fa-linkedin:hover
+{
+    background-color: blue;
+    color: white;
+}
+.fa-instagram:hover
+{
+    background-color: magenta;
+    color: white;
+}
+.section-4
+{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.section-4 p
+{
+    color: gray;
+    position: relative;
+}
+.section-4 p::after
+{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    right:0;
+    bottom:-10px;
+    background-color:yellow;
+    transition: all .3s;
+}
+.section-4 p:hover::after
+{
+    width: 100%;
+}

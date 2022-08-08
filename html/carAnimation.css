@@ -15,7 +15,7 @@
 .road{
     width: 300%;
     height: 200px;
-    background-image: url('../assets/_highway.jpg');
+    background-image: url("../assets/_highway.jpg");
     position: absolute;
     bottom: 0;
     left: 0;
@@ -69,7 +69,7 @@
 
 .wheel {
     position: absolute; 
-   left: 51.8%;
+   left: 35.8%;
     z-index: 2;
     bottom: 198px;
   }

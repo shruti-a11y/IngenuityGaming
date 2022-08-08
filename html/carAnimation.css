@@ -15,7 +15,7 @@
 .road{
     width: 300%;
     height: 200px;
-    background-image: url('../assets/_highway.jpg');
+    background-image: url('./assets/_highway.jpg');
     position: absolute;
     bottom: 0;
     left: 0;
@@ -26,7 +26,7 @@
 .city{
     width: 300%;
     height: 200px;
-    background-image: url('../assets/city.png');
+    background-image: url('./assets/city.png');
     position: absolute;
     bottom: 200px;
     left: 0;

@@ -6,13 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ingenuity Gaming</title>
     <link rel="stylesheet" href="assign3.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assign3.js">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-
     />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- CSS only -->
   </head>
   <body>
@@ -20,32 +26,48 @@
       <!-- image and nav bar -->
       <header id="home">
         <nav>
-            <div class="logo">
-                <img src="../assets/logo.png" alt="">
-            </div>
-            <div class="menu">
+          <div class="logo">
+            <img src="../assets/logo.png" alt="" usemap="#workmap" />
+          </div>
+          <map name="workmap">
+            <!-- <area shape="rect" coords="22,90,270,200" href="#" alt="no page found"> -->
+            <area shape="rect" coords="0, 0, 270, 300" href="#" />
+          </map>
+          <div class="menu" id="myTopnav">
+            <a class="active" href="#home"
+              ><span class="material-symbols-outlined"> home </span>
+              <pre></pre>
+              Home</a
+            >
+            <a href="#team">
+              <span class="icon material-symbols-outlined"> groups </span>
+              <pre></pre>
+              Team</a
+            >
+            <a href="#about">
+              <span class="icon material-symbols-outlined"> apartment </span>
+              <pre></pre>
+              About</a
+            >
+            <a href="#tech">
+              <span class="icon material-symbols-outlined"> biotech </span>
+              <pre></pre>
+              Technologies</a
+            >
+            <a href="#contact">
+              <span class="icon material-symbols-outlined"> contacts </span>
+              <pre></pre>
+              Contact</a
+            >
 
-              <a class="active" href="#home"
-                ><span class="material-symbols-outlined"> home </span>
-                <pre></pre>
-                Home</a
-              >
-              <a href="#team">
-                <span class="material-symbols-outlined">
-                    groups
-                    </span> <pre></pre> Team</a>
-              <a href="#about">
-                <span class="material-symbols-outlined">
-                    apartment
-                    </span> <pre></pre> About</a>
-              <a href="#tech"><span class="material-symbols-outlined">
-                biotech
-                </span> <pre></pre> Technologies</a>
-              <a href="#contact">
-                <span class="material-symbols-outlined">
-                    contacts
-                    </span> <pre></pre> Contact</a>
-            </div>
+            <!-- responsive navbar -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger"><a 
+              ><span class="material-symbols-outlined"> menu </span>
+            </a></label>
+     
+            
+          </div>
         </nav>
       </header>
 
@@ -136,17 +158,19 @@
               />
             </div>
             <h2>Game Design</h2>
-            <br>
+            <br />
             <p>
               We work in collaboration with our clients to build unique game
               concepts and designs that are suited for their target markets and
               customer base. We design games in collaboration with our customers
               and keeping in mind the channels for distribution of the games.
-              Internally we ensure proper knowledge sharing and alignment on the
-              game visions with the development teams and
             </p>
             <div class="image">
-              <a href="https://www.ingenuitygaming.com/services/design.html" class="myButton">Read more</a>
+              <a
+                href="https://www.ingenuitygaming.com/services/design.html"
+                class="myButton"
+                >Read more</a
+              >
             </div>
           </div>
           <div class="fitem-rect">
@@ -158,16 +182,19 @@
               />
             </div>
             <h2>Quest & Game Development</h2>
-            <br>
+            <br />
             <p>
               For online game clients Quest is based on H5 (Pixi). For games
               engines/services the framework supports Python, C# and Java. Quest
               supports game builds for most industry RGS's, Platform Features
               and Bonus tools. It supports Multi-language & Multi-currency. It’s
-              compliant with Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit distinctio cumque non pariatur, 
             </p>
             <div class="image">
-              <a href="https://www.ingenuitygaming.com/services/technology.html" class="myButton">Read more</a>
+              <a
+                href="https://www.ingenuitygaming.com/services/technology.html"
+                class="myButton"
+                >Read more</a
+              >
             </div>
           </div>
           <div class="fitem-rect">
@@ -179,15 +206,19 @@
               />
             </div>
             <h2>Engine/Service Development</h2>
-            <br>
+            <br />
             <p>
               We work with most RGS’s in the industry and build game
               Engines/Services (Implementation of math on the RGS’s) for most of
               our customers. We work with Python, C# and Java for engine builds
-              and have process in place to securely manage our customers IP, Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum soluta commodi eum enim, natus temporibus
+              and have process in place to securely manage our customers
             </p>
             <div class="image">
-              <a href="https://www.ingenuitygaming.com/services/design.html" class="myButton">Read more</a>
+              <a
+                href="https://www.ingenuitygaming.com/services/design.html"
+                class="myButton"
+                >Read more</a
+              >
             </div>
           </div>
           <div class="fitem-rect">
@@ -199,16 +230,19 @@
               />
             </div>
             <h2>Game Creatives</h2>
-            <br>
+            <br />
             <p>
               We have a highly trained Art Studio that has built its reputation
               and gained its experience having built hundreds of games over the
               years with the leading landbased and online game designers. We
               continue to use the experience to build bespoke content for the
-              leading Operators and Content suppliers globally. We use an Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             </p>
             <div class="image">
-              <a href="https://www.ingenuitygaming.com/services/design.html" class="myButton">Read more</a>
+              <a
+                href="https://www.ingenuitygaming.com/services/design.html"
+                class="myButton"
+                >Read more</a
+              >
             </div>
           </div>
         </div>
@@ -242,7 +276,7 @@
             </p>
           </section>
 
-<section class="category">
+          <section class="category">
             <h2>categories</h2>
             <ul>
               <li><a href="">C</a></li>
@@ -256,7 +290,8 @@
           <section class="quicklinks">
             <h2>quick links</h2>
             <ul>
-              <li><a href="">about us</a></li>;
+              <li><a href="">about us</a></li>
+              ;
               <li><a href="">contact us</a></li>
               <li><a href="">services</a></li>
               <li><a href="">processes</a></li>
@@ -286,21 +321,30 @@
           </section>
         </section>
         <section class="section-2">
-          <p>about <a href="https://www.ingenuitygaming.com/about-us/">click here</a></p>
+          <p>
+            about
+            <a href="https://www.ingenuitygaming.com/about-us/">click here</a>
+          </p>
         </section>
         <section class="section-3">
           <ul>
             <li>
-              <a href="https://www.facebook.com/IngenuityGaming/"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.facebook.com/IngenuityGaming/"
+                ><i class="fa fa-facebook"></i
+              ></a>
             </li>
             <li>
-              <a href="https://twitter.com/ingenuitygaming?lang=en"><i class="fa fa-twitter"></i></a>
+              <a href="https://twitter.com/ingenuitygaming?lang=en"
+                ><i class="fa fa-twitter"></i
+              ></a>
             </li>
             <li>
               <a href="https://www.google.com/"><i class="fa fa-google"></i></a>
             </li>
             <li>
-              <a href="https://in.linkedin.com/company/ingenuity-gaming"><i class="fa fa-linkedin"></i></a>
+              <a href="https://in.linkedin.com/company/ingenuity-gaming"
+                ><i class="fa fa-linkedin"></i
+              ></a>
             </li>
             <li>
               <a href=""><i class="fa fa-instagram"></i></a>
@@ -314,8 +358,6 @@
           </p>
         </section>
       </footer>
-      
-      
     </div>
   </body>
 </html>

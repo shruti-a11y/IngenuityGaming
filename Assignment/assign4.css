@@ -14,7 +14,7 @@
   .highway {
     height: 200px;
     width: 300%;
-    background-image: url("../assets/_highway.jpg");
+    background-image: url("./assets/_highway.jpg");
     position: absolute;
     bottom: 0;
     left: 0;

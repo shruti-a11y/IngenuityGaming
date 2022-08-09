@@ -25,8 +25,6 @@ const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Sa
 let date2 = "Today Day : " + weekday[curr_date.getDay()];
 document.getElementById('para').innerHTML =  "<br>"+date1+ "<br>" + date2 + "<br>";
 
-// document.write(date1 );
-// document.write(  "<br>" + date2);
 
 // question2
 
@@ -37,9 +35,6 @@ document.body.style.color="green";
 
 let name = window.prompt("Enter your name: ");
 document.getElementById('para2').innerHTML = "<br>"+"Your name is "+ name.fontcolor("blue") +"<br>";
-// document.write("<br>" + "Your name is " + name.fontcolor("blue"));
-
-
 
 
 
@@ -57,7 +52,4 @@ document.getElementById('para3').innerHTML = "<br> +<i> Addition is = </i>" + Ad
                                             "<br>" + "<i> Multiplication is = </i>" + Multiplication
                                             "<br>" + "<i> Division is = </i>" + Division + "<br>";
 
-// document.write("<br>" + "<i> Addition is = </i>" + Addition);
-// document.write("<br>" + "<i>  Subtraction is = </i>" + Subtraction);
-// document.write("<br>" + "<i> Multiplication is = </i>" + Multiplication);
-// document.write("<br>" + "<i> Division is = </i>" + Division);
+

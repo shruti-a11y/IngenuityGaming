@@ -7,7 +7,7 @@ var student = {
         pincode : 202001
     },
     details: function(){
-        return this.name +" "+ this.age + " year old"+" live in" + this.address.city+" " + this.state;
+        return this.name +" "+ this.age + " year old"+" live in " + this.address.city+" " ;
     }
 };
 document.write(student.details());

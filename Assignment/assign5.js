@@ -47,9 +47,9 @@ let Subtraction = num1 - num2;
 let Multiplication = num1 * num2;
 let Division = num1 / num2;
 
-document.getElementById('para3').innerHTML = "<br> +<i> Addition is = </i>" + Addition +
-                                            "<br>" + "<i>  Subtraction is = </i>" + Subtraction
-                                            "<br>" + "<i> Multiplication is = </i>" + Multiplication
-                                            "<br>" + "<i> Division is = </i>" + Division + "<br>";
+document.getElementById('para3').innerHTML = "<br><i> Addition is = </i>" + Addition +
+                                            "<br><i>  Subtraction is = </i>" + Subtraction+
+                                            "<br><i> Multiplication is = </i>" + Multiplication+
+                                            "<br><i> Division is = </i>" + Division + "<br>";
 
 

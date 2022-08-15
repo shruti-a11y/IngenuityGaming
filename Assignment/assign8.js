@@ -21,8 +21,34 @@ function myFunction2() {
 function myFunction3() {
     
     alert("Ques 3 : Write a code in JavaScript to Check all Students passed ");
-    let string = prompt("Enter any string with extra spaces");
-    alert("Answer : "+string.trim());
+    // let string = prompt("Enter any string with extra spaces");
+    let size = prompt("Enter the size of array");
+    let res = [];
+    let sum = 0;
+    while (size-- > 0 ) {
+        var num = Number(prompt("Enter number"));
+        checkNum(num);
+        sum = sum+num;
+    }  
+
+    function checkNum(num) {
+        while (!/^[0-9]+$/.test(num)) {
+            alert("You did not enter a number.");
+            answer = prompt("Enter a number: ");
+        }
+        res.push(num);
+        alert("Number added to array");
+    }
+    alert("Given Array : "+ res);
+    sum= sum/size;
+    let marksCriteria = prompt("Enter the passing criteria");
+    if (sum >= marksCriteria ) {
+        alert("Students passed"); 
+    }
+    else{
+        alert("Students failed"); 
+    }
+
 }
 function myFunction4() {
     

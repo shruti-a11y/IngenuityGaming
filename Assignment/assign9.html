@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      background: linear-gradient(to right, #be93c5, #7bc6cc);
+    }
+    .container {
+      text-align: center;
+      margin-top: 10%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .ques {
+      margin-left: 10%;
+      text-align: justify;
+      width: 75%;
+    }
+    .option {
+      margin: 20px;
+     
+      text-align: center;
+      font-size: 1.1em;
+    }
+    .option button{
+        margin: 15px;
+        height: 30px;
+        width: 90px;
+        border: none;
+        border-radius: 10px ;
+    }
+    .option button:hover{
+        background: linear-gradient(to right, #fbd3e9, #bb377d);
+        box-shadow: 10px 10px 15px 2px rgba(0,0,0,0.67);
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Assessment-9</h1>
+      <h2>Concept Understanding Task: Functions</h2>
+
+      <div class="ques">
+        <ol>
+          <li>
+            Write a Program to return sum of all Arguments passed to a Function.
+          </li>
+
+          <li>
+            Write a Program to return more than one value from a Function.
+          </li>
+
+          <li>
+            Write a code to return entire function definition and display it.
+          </li>
+
+          <li>
+            Write a JavaScript program to create a new string adding "New!" in
+            front of a given String. If the given string begins with "New!"
+            already then return the original string. (Use Functional Approach)
+          </li>
+
+          <li>
+            Write a JavaScript program to create a new string from a given
+            string taking first 3 characters and the last 3 characters of a
+            string and add them together. The string length must be 3 or more.
+            If not, return the original string is returned. (Use Functional
+            Approach)
+          </li>
+        </ol>
+      </div>
+      <div class="option">
+        <p>Click the button to display an alert box.</p>
+
+        <button onclick="myFunction1()">Try ques-1</button>
+        <button onclick="myFunction2()">Try ques-2</button>
+        <button onclick="myFunction3()">Try ques-3</button>
+        <button onclick="myFunction4()">Try ques-4</button>
+        <button onclick="myFunction5()">Try ques-5</button>
+      </div>
+    </div>
+
+    <script src="./assign9.js"></script>
+  </body>
+</html>

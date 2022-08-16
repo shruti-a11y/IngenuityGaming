@@ -21,11 +21,23 @@
         margin: 0;
         box-sizing: border-box;
         font-family: "Anton", sans-serif;
-        font-family: "Press Start 2P", cursive;       
+        font-family: "Press Start 2P", cursive;
       }
-      body{
-       background-color: black;
+      body {
+        background-color: black;
       }
+      .star{
+        position: absolute;
+        top: 0;
+        height: 60vh;
+        display: none;
+        width: 100%;
+      }
+      .star img{
+        width: 100%;
+      }
+
+
       .container {
         background-image: url("https://cdn.dribbble.com/userupload/2901211/file/original-69d7f114cc63dfd01e8e541935f6386f.jpg?compress=1&resize=1024x768");
         background-size: cover;
@@ -35,18 +47,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    .container h1{
-          font-size: 3em;
-          text-shadow: 4px 4px 3px rgb(218, 165, 32,.6);  
-          animation: blink 2s linear infinite;      
-
+      }
+      .container h1 {
+        font-size: 3em;
+        text-shadow: 4px 4px 3px rgb(218, 165, 32, 0.6);
+        animation: blink 2s linear infinite;
       }
       header {
         background-color: black;
         height: 20vh;
         width: 100%;
-        
+
         position: absolute;
         display: flex;
         font-size: 2.8em;
@@ -54,10 +65,9 @@
         align-items: center;
         bottom: 0;
         z-index: 5;
-        animation: notice 5s linear 2s 1 ;
-   
+        animation: notice 5s linear 2s 1;
       }
-      header p{
+      header p {
         color: goldenrod;
       }
 
@@ -74,26 +84,27 @@
       }
 
       @keyframes blink {
-        0%{
-            opacity: .3;
+        0% {
+          opacity: 0.3;
         }
-        50%{
-            opacity: 1;
+        50% {
+          opacity: 1;
         }
-        100%{
-            opacity: .3;
+        100% {
+          opacity: 0.3;
         }
-        
       }
     </style>
   </head>
   <body>
+    <div class="star" id="star">
+      <img src="../assets/star.gif" alt="">
+    </div>
     <header id="congo">
       <p id="demo"></p>
     </header>
     <div class="container">
-        <h1>Guess The Number</h1>
-      
+      <h1>Guess The Number</h1>
     </div>
     <script src="./assign6b.js"></script>
   </body>

@@ -2,6 +2,8 @@ function myFunction1() {
   alert(
     "Ques 1 : Write a Program to return sum of all Arguments passed to a Function"
   );
+
+  let string = prompt("Enter Number ")
   let sum = 0;
   let arr = [];
   alert("To stop the input enter 0");
@@ -18,6 +20,11 @@ function myFunction1() {
     "Entered Array is : " + arr + "<br>";
   document.getElementById("answer").innerHTML = "Answer  : " + sum;
 }
+
+
+
+
+
 function myFunction2() {
   alert(
     "Ques 2 : Write a Program to return more than one value from a Function. "

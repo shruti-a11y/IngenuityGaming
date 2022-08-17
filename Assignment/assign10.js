@@ -132,5 +132,10 @@ function myFunction5() {
 // button
 
 function goBack() {
+    document.getElementById("myList").innerHTML = "";
+    document.getElementById("ques").innerHTML = "";
+    document.getElementById("userInput").innerHTML = "";
+    document.getElementById("answer").innerHTML = "";
+    document.getElementById("myList").innerHTML = "";
     document.getElementById("card").style.display = "none";
   }

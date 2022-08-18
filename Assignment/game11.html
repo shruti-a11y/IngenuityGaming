@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WHAKE A MOLE GAME</title>
+    <link rel="stylesheet" href="game11.css" />
+  </head>
+  <style>
+    .gamepage{
+        visibility:hidden;
+    }
+    /* changes */
+    /* .startpage{
+        visibility:hidden;
+    } */
+     /* changes */
+  </style>
+  <body>
+    <div class="startpage">
+
+        <h1>WHAKE A MOLE</h1>
+        <img src="https://github.com/pankkap/IngenuityGamingTraining22/blob/main/Day-11%20DOM_EventHandling/whack-a-mole-game/mole.png?raw=true" id="mole" />
+        <img src="https://raw.githubusercontent.com/pankkap/IngenuityGamingTraining22/7484e76d310a30961e9330ff10793188bfa4a3b8/Day-11%20DOM_EventHandling/whack-a-mole-game/dirt.svg" id="mud" />
+        <button type="button" id="start" onclick="start()">START</button>
+    </div>
+<div class="gamepage">
+
+    <img src="../assets/mud.png" id="dirt2" class="dirt"  />
+    <img src="../assets/mud.png" id="dirt3" class="dirt" 
+      />
+    <img src="../assets/mud.png" id="dirt1" class="dirt" 
+      />
+    <img src="../assets/mud.png" id="dirt4" class="dirt" 
+      />
+    <img src="../assets/mud.png" id="dirt5" class="dirt" 
+      />
+    <img src="../assets/mud.png" id="dirt6" class="dirt" 
+      />
+      
+    <img src="https://github.com/pankkap/IngenuityGamingTraining22/blob/main/Day-11%20DOM_EventHandling/whack-a-mole-game/mole.png?raw=true" id="mole1" class="mole" onclick="myFunction()" />
+    <img src="https://github.com/pankkap/IngenuityGamingTraining22/blob/main/Day-11%20DOM_EventHandling/whack-a-mole-game/mole.png?raw=true" id="mole2" class="mole" onclick="myFunction()"/>
+    <img src="https://github.com/pankkap/IngenuityGamingTraining22/blob/main/Day-11%20DOM_EventHandling/whack-a-mole-game/mole.png?raw=true" id="mole3" class="mole" onclick="myFunction()"/>
+    <img src="https://github.com/pankkap/IngenuityGamingTraining22/blob/main/Day-11%20DOM_EventHandling/whack-a-mole-game/mole.png?raw=true" id="mole4" class="mole "onclick="myFunction()"/>
+    <img src="https://github.com/pankkap/IngenuityGamingTraining22/blob/main/Day-11%20DOM_EventHandling/whack-a-mole-game/mole.png?raw=true" id="mole5" class="mole" onclick="myFunction()"/>
+    <img src="https://github.com/pankkap/IngenuityGamingTraining22/blob/main/Day-11%20DOM_EventHandling/whack-a-mole-game/mole.png?raw=true" id="mole6" class="mole" onclick="myFunction()"/>
+
+    <span class="points">YOUR POINT :-</span>
+    <span id="currentPoint" class="points">0</span>
+</div>
+
+    <script src="game11.js"></script>
+  </body>
+</html>

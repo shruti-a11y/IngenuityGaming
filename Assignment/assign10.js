@@ -62,7 +62,7 @@ function myFunction3() {
   document.getElementById("ques").innerHTML =
     "Ques 3 : Write a Program to call a function in an interval of 3 sec for 5 times.";
 
-  document.getElementById("userInput").innerHTML = "Here time is show in every 3sec of interval for 5 time :> ";
+  document.getElementById("userInput").innerHTML = "Here time is show in every 3sec of interval for 5 time :) ";
 
 //   alert("Here time is show in every 3sec of interval for 5 time :>");
   var clear = setInterval(() => {
@@ -75,7 +75,7 @@ function myFunction3() {
   }, 3000);
 
   setTimeout(() => {
-    alert("Time stop Thanks for waiting :>");
+    alert("Time stop Thanks for waiting :)");
     clearInterval(clear);
   }, 18000);
 

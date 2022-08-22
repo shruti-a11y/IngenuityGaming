@@ -12,7 +12,6 @@
       background-image: url(../assets/desert.png);
       background-size: cover;
     }
-    header,
     form {
     /* background:  rgb(42, 42, 255); */
     height: 12vh;
@@ -21,9 +20,20 @@
     align-items: center;
     
   }
-  header {
-    font-size: 40px;
+  header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
   }
+  header h2{
+    font-size: 4em;
+  }
+  header p{
+    font-size: 1.2em;
+  }
+
   
   form input,
   form button {

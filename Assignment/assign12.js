@@ -118,12 +118,12 @@ setTimeout(() => {
             
   (function() {
     console.log("i work");
-      var url = "https://getbootstrap.com/docs/5.2/forms/validation/";
-      var windowSize = "height=500 , width = 500";
-      var newWindow = window.open(url,"_blank",windowSize);
-      // url - to open the page we want
-      // target : 
-      // 
-      newWindow.moveTo(500,100)
+    var url = "../Assignment/FORM.html";
+    var windowSize = "height=700 , width = 700";
+    var newWindow = window.open(url,"_blank",windowSize);
+    // url - to open the page we want
+    // target : 
+    // 
+    newWindow.moveTo(500,100)
   })();
 }, 10000);

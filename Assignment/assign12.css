@@ -20,6 +20,9 @@
     align-items: center;
     
   }
+  #Todocontanier{
+    display: none;
+  }
   header{
     display: flex;
     flex-direction: column;

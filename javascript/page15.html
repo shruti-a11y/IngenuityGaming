@@ -6,18 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <button id="btn" onclick="openWindow">Click here</button>
+    <!-- <button id="btn" onclick="openWindow()">Click here</button> -->
     <script>
-        function openWindow() {
-            var url = "";
-            var windowSize = "height=500,width = 500";
-            var newWindow = window.open(url,"todos",windowSize);
-            // url - to open the page we want
-            // target : 
-            // 
-            newWindow.moveTo(500,100)
-        }
+        setTimeout(() => {
+            
+            (function() {
+                var url = "https://getbootstrap.com/docs/5.2/forms/validation/";
+                var windowSize = "height=500 , width = 500";
+                var newWindow = window.open(url,"_blank",windowSize);
+                // url - to open the page we want
+                // target : 
+                // 
+                newWindow.moveTo(500,100)
+            })();
+        }, 3000);
+
     </script>    
 </body>
 

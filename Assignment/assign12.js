@@ -80,8 +80,8 @@ todoList.onclick = function checkBtn(e) {
 };
 
 // local storage
-
-if (keyArray.length == 0) {
+console.log(out.length);
+if (out.length == 0) {
   //Items are stored in local storage
   console.log("no data found");
 } else {
@@ -112,3 +112,20 @@ if (keyArray.length == 0) {
     i++;
   }
 }
+
+
+// popup window
+        setTimeout(() => {
+            
+            (function() {
+                var url = "https://getbootstrap.com/docs/5.2/forms/validation/";
+                var windowSize = "height=500 , width = 500";
+                var newWindow = window.open(url,"_blank",windowSize);
+                // url - to open the page we want
+                // target : 
+                // 
+                newWindow.moveTo(500,100)
+            })();
+        }, 10000);
+
+   

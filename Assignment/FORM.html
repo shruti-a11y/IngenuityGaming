@@ -1,68 +1,246 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>BOM</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
   </head>
   <style>
-    .container{
-      border: 2px solid black;
+    * {
+      box-sizing: border-box;
     }
-    h1{
-      border: 2px solid black;
-      margin-left: 45%;
+    body {
+      background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);
+    }
+    .container {
+      max-width: 650px;
+      max-height: 90vh;
+      overflow: auto;
+      margin-top: 20px;
+      background: whitesmoke;
+      padding: 20px;
+      border-radius: 15px;
+    }
+    h1 {
+      margin: 10px;
+      padding: 5px;
+      background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);
+      text-align: center;
+      border-radius: 5px;
+    }
+    input:focus,
+    .exta:focus,
+    input.form-control:focus {
+      box-shadow: 0px 0px 8px 0px rgba(215,109,119,0.72);
+-webkit-box-shadow: 0px 0px 8px 0px rgba(215,109,119,0.72);
+-moz-box-shadow: 0px 0px 8px 0px rgba(215,109,119,0.72);
+    }
+
+    .btnCase {
+      text-align: center;
     }
   </style>
+
   <body>
-    <div class="container" style="margin: 50px;">
-        <h1>FEEDBACK</h1>
-        <form class="row g-3">
-            <div class="col-md-4">
-              <label for="validationDefault01" class="form-label">First name</label>
-              <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
+    <div class="container">
+      <h1>FEEDBACK</h1>
+      <form class="row g-3">
+        <div class="col-md-12">
+          <label for="validationDefault01" class="form-label">First name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationDefault01"
+            value="Mark"
+            required
+          />
+        </div>
+        <div class="col-md-12">
+          <label for="validationDefault02" class="form-label">Last name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationDefault02"
+            value="Otto"
+            required
+          />
+        </div>
+        <div class="col-md-12">
+          <label for="validationDefaultUsername" class="form-label"
+            >Username</label
+          >
+          <div class="input-group">
+            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+            <input
+              type="text"
+              class="form-control"
+              id="validationDefaultUsername"
+              aria-describedby="inputGroupPrepend2"
+              required
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationDefault03" class="form-label">City</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationDefault03"
+            required
+          />
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault04" class="form-label">State</label>
+          <select class="form-select exta" id="validationDefault04" required>
+            <option selected disabled value="">Choose...</option>
+            <option>...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+
+        <fieldset class="row mb-3" style="margin-top: 18px">
+          <legend class="col-form-label col-sm-6 pt-0">
+            What emotions did you experience?
+          </legend>
+          <div class="col-sm-6">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Exicited
+              </label>
             </div>
-            <div class="col-md-4">
-              <label for="validationDefault02" class="form-label">Last name</label>
-              <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckChecked"
+                checked
+              />
+              <label class="form-check-label" for="flexCheckChecked">
+                Humbled
+              </label>
             </div>
-            <div class="col-md-4">
-              <label for="validationDefaultUsername" class="form-label">Username</label>
-              <div class="input-group">
-                <span class="input-group-text" id="inputGroupPrepend2">@</span>
-                <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
-              </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckChecked"
+                checked
+              />
+              <label class="form-check-label" for="flexCheckChecked">
+                Elated
+              </label>
             </div>
-            <div class="col-md-6">
-              <label for="validationDefault03" class="form-label">City</label>
-              <input type="text" class="form-control" id="validationDefault03" required>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckChecked"
+                checked
+              />
+              <label class="form-check-label" for="flexCheckChecked">
+                Loved
+              </label>
             </div>
-            <div class="col-md-3">
-              <label for="validationDefault04" class="form-label">State</label>
-              <select class="form-select" id="validationDefault04" required>
-                <option selected disabled value="">Choose...</option>
-                <option>...</option>
-              </select>
+          </div>
+        </fieldset>
+        <fieldset class="row mb-3" style="margin-top: 18px">
+          <legend class="col-form-label col-sm-6 pt-0">
+            At What time we can contact you?
+          </legend>
+          <div class="col-sm-6">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gridRadios"
+                id="gridRadios1"
+                value="option1"
+                checked
+              />
+              <label class="form-check-label" for="gridRadios1">
+                9:00 a.m - 11:00 a.m
+              </label>
             </div>
-            <div class="col-md-3">
-              <label for="validationDefault05" class="form-label">Zip</label>
-              <input type="text" class="form-control" id="validationDefault05" required>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gridRadios"
+                id="gridRadios2"
+                value="option2"
+              />
+              <label class="form-check-label" for="gridRadios2">
+                1:00 p.m - 4:00 p.m
+              </label>
             </div>
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                <label class="form-check-label" for="invalidCheck2">
-                  Agree to terms and conditions
-                </label>
-              </div>
+            <div class="form-check disabled">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gridRadios"
+                id="gridRadios3"
+                value="option3"
+              />
+              <label class="form-check-label" for="gridRadios3">
+                5:00 p.m - 9:00 p.m
+              </label>
             </div>
-            <div class="col-12">
-              <button class="btn btn-primary" type="submit">Submit form</button>
-            </div>
-          </form>
+          </div>
+        </fieldset>
+        <div class="col-md-12">
+          <label for="validationDefault05" class="form-label"
+            >Any Other Queries</label
+          >
+          <div class="mb-12">
+            <textarea
+              class="form-control exta"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              placeholder="Write here..."
+            ></textarea>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="invalidCheck2"
+              required
+            />
+            <label class="form-check-label" for="invalidCheck2">
+              Agree to terms and conditions
+            </label>
+          </div>
+        </div>
+        <div class="col-12 btnCase">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

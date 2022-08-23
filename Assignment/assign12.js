@@ -27,7 +27,7 @@ btn.onclick = function createTodo(e) {
     alert("Hope you will enter the valid value this time😒");
   } else {
     keyArray.push(todoinput.value);
-    localStorage.setItem("data",keyArray);
+    localStorage.setItem("data", keyArray);
     var newDiv = document.createElement("div");
     newDiv.classList.add("todo");
     // new li created
@@ -66,8 +66,8 @@ todoList.onclick = function checkBtn(e) {
     console.log("delete");
     var parentNode = check.parentElement;
     var data = keyArray.indexOf(parentNode.innerText);
-    keyArray.splice(data,1);
-    window.localStorage.setItem("data",keyArray);
+    keyArray.splice(data, 1);
+    window.localStorage.setItem("data", keyArray);
     parentNode.remove();
 
     // local storage
@@ -80,7 +80,7 @@ todoList.onclick = function checkBtn(e) {
 };
 
 // local storage
-console.log(out.length);
+
 if (out.length == 0) {
   //Items are stored in local storage
   console.log("no data found");
@@ -113,19 +113,17 @@ if (out.length == 0) {
   }
 }
 
-
 // popup window
-        setTimeout(() => {
+setTimeout(() => {
             
-            (function() {
-                var url = "https://getbootstrap.com/docs/5.2/forms/validation/";
-                var windowSize = "height=500 , width = 500";
-                var newWindow = window.open(url,"_blank",windowSize);
-                // url - to open the page we want
-                // target : 
-                // 
-                newWindow.moveTo(500,100)
-            })();
-        }, 10000);
-
-   
+  (function() {
+    console.log("i work");
+      var url = "https://getbootstrap.com/docs/5.2/forms/validation/";
+      var windowSize = "height=500 , width = 500";
+      var newWindow = window.open(url,"_blank",windowSize);
+      // url - to open the page we want
+      // target : 
+      // 
+      newWindow.moveTo(500,100)
+  })();
+}, 10000);

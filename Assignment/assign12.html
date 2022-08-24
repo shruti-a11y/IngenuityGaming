@@ -10,6 +10,7 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="assign12.css" />
+    <link rel="stylesheet" href="../css/networkToggle.css">
     <style>
       .container{
           height: 100vh;
@@ -30,7 +31,7 @@
 
       }
 
-      p{
+      .container p{
           font-size: 1.2em;
           color: whitesmoke;
           animation: popup 2s ease infinite ;
@@ -66,7 +67,20 @@
       <p>Loading</p>
   </div>
 
-
+  <!-- wifi -->
+  <div id="toastMessageBox">
+    <div class="line"></div>
+    <div class="alertBox">
+      <div class="ion" id="icon">
+        <i class="fa-solid fa-wifi" ></i>
+      </div>
+      <div class="alertTxt">
+        <p><strong id="active"> </strong></p>
+        hii the sknkdfjnaknndaknclk
+      </div>
+      <button id="myBtn" onclick="hideAlert()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+  </div>
 
     <div id="Todocontanier">
       <header>
@@ -80,7 +94,7 @@
           id="todo-data"
           placeholder="E.g. Build a web app"
         />
-        <button>
+        <button id="myBtn2">
           <i class="fa fa-plus-square" id="submit" aria-hidden="true"></i>
         </button>
       </form>
@@ -95,6 +109,9 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+    <script src="../javascript/networkToggle.js"></script>
+    <script src="https://kit.fontawesome.com/50b6fa9f82.js" crossorigin="anonymous"></script>
+
 
   </body>
 </html>

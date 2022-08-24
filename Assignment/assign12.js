@@ -12,7 +12,7 @@ function stopLoader() {
 }
 
 var todoinput = document.querySelector(".todo-input");
-var btn = document.querySelector("button");
+var btn = document.querySelector("#myBtn2");
 var todoList = document.querySelector(".todo-list");
 var out = window.localStorage.getItem("data");
 // we define a key

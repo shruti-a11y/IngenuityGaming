@@ -5,100 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    
-    <style>
-      *{
-        box-sizing: border-box;
-      }
-        .toastMessageBox{
-            width: 350px;
-            height: 75px;
-            border: 2px solid black;
-            padding: 8px;
-            border-radius: 8px;
-            display: flex;
-            gap: 10px;
-            padding-right: 15px;
-        }
-        .line{
-            height: 100%;
-            background-color: green;
-            border-radius: 15px;
-            width: 5px;
-        }
-        .alertBox{
-            /* border: 2px solid black; */
-            height: 100%;
-            width: 250px;
-            display: flex;
-            gap: 15px;
-            align-items: center;
-            flex: 1;
-        }
-        .alertTxt{
-          padding: 0;
-          height: 100%;
-          flex: 1;
-          line-height: 0.3;
-          color: rgb(162, 161, 161);
-          /* border: 2px solid black; */
-        }
-        .alertTxt p{
-          color: black;
-        }
-        .ion{
-          background-color: rgb(22, 180, 22);
-          color: aliceblue;
-          height: 28px;
-          width: 28px;
-          text-align: center;
-          border-radius: 50%;
-          padding-top: 6px;
-        }
-        button{
-          background-color: white;
-          border: none;
-          font-size: larger;
-          color: rgb(162, 161, 161);
-        }
-        
-    </style>
+    <link rel="stylesheet" href="../css/networkToggle.css">
   </head>
   <body>
     <h1>WINDOW NAVIAGTION OBJECT</h1>
     <p>THE OBJECT PROPERTY</p>
     <p id="demo"></p>
   
-
-    <div class="toastMessageBox">
+    
+    <div id="toastMessageBox">
         <div class="line"></div>
         <div class="alertBox">
-          <div class="ion">
-
-            <i class="fa-solid fa-wifi"></i>
+          <div class="ion" id="icon">
+            <i class="fa-solid fa-wifi" ></i>
           </div>
           <div class="alertTxt">
             <p><strong id="active"> </strong></p>
             hii the sknkdfjnaknndaknclk
           </div>
-          <button><i class="fa-solid fa-xmark"></i></button>
+          <button id="myBtn"><i class="fa-solid fa-xmark"></i></button>
         </div>
-  
-    </div>
-    <script>
-    //   count = 0;
-      setInterval(() => {
-        let online = navigator.onLine;
-        if (online == true) {
-        //   count++;
-          document.getElementById("active").innerHTML =
-            "Yay! Everything worked! ";
-        } else {
-          document.getElementById("demo").innerHTML =
-            "Browser online: " + online;
-        }
-      }, 500);
-    </script>
+      </div>
+
+    <script src="../javascript/networkToggle.js"></script>
     <script src="https://kit.fontawesome.com/50b6fa9f82.js" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -19,7 +19,7 @@ function displayData(serverData) {
     // }
     // let newdiv = document.createElement("div");
     // let newspan1 = document.createElement('span');
-    document.getElementById("cName").innerHTML = " "+ serverData.Countries[51].Country;
+    document.getElementById("cName").innerHTML = " "+ serverData.Countries[5].Country;
     document.getElementById("cDate").innerHTML = " "+ serverData.Countries[51].Date;
     document.getElementById("cConfirm").innerHTML = " "+ serverData.Countries[51].Country;
     document.getElementById("cTotalComfirm").innerHTML = " "+ serverData.Countries[5].TotalConfirmed;

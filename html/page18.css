@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: cornflowerblue;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1{
+    color: black;
+}
+#canvas{
+    border-radius: 25px;
+    background-color: azure;
+}

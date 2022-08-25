@@ -21,6 +21,7 @@ async function getApiData(url) {
     var data = await fetch(url);
     var res =  await data.json();
     console.log(res);
+    // text(res)
     displayData(res);
 }
 getApiData(API_URL)
@@ -28,6 +29,22 @@ getApiData(API_URL)
 function displayData(serverData) {
     
     // console.log("type of servedata : "+ typeof(serverData));
+    var e = document.getElementById("ddlViewBy");
+    function onChange() {
+      var value = e.value;
+      text = e.options[e.selectedIndex].text;
+      console.log(text);
+    }
+    
+    e.onchange = onChange;
+    onChange();
+
+
+
+
+
+
+    
     for(var user of serverData){
         // if (user.name == "Leanne Graham") {
         //     let newtr = document.createElement('tr');

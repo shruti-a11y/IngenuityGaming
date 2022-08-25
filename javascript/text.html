@@ -7,6 +7,25 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form>
+        <select id="ddlViewBy">
+          <option value="2">test1</option>
+          <option value="1" selected="selected">Albania</option>
+          <option value="3">test3</option>
+        </select>
+      </form>
+
+      <script>
+      var e = document.getElementById("ddlViewBy");
+  
+function onChange() {
+  var value = e.value;
+  text = e.options[e.selectedIndex].text;
+  console.log(value, text);
+}
+
+e.onchange = onChange;
+onChange();
+      </script>
 </body>
 </html>tml>

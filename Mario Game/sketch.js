@@ -108,8 +108,10 @@ function draw() {
     ground.visible = false;
 
     //   display text
-    textSize(20);
+    textSize(26);
+    
     fill("brown");
+    textFont('Silkscreen')
     text("Coin Collection : " + coinScore, 400, 50);
 
     //   call generate bricks

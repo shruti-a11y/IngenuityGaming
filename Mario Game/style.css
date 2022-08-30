@@ -6,6 +6,7 @@
 
 canvas{
     /* background-color: gray; */
+    font-family: 'Rubik Dirt', cursive;
     display: block;
     margin: auto;
 }

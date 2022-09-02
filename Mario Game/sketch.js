@@ -16,7 +16,7 @@ var restartImg;
 
 //load assests
 function preload() {
-  bgImage = loadImage("./images/bgnew.jpg");
+  bgImage = loadImage("./images/bg.jpg");
   marioImage = loadAnimation(
     "images/mar1.png",
     "images/mar2.png",
@@ -207,7 +207,7 @@ function generateobstacle() {
   if (frameCount % fCountdelay == 0) {
     // console.log(frameCount);
     var obstacle = createSprite(1200, 100, 40, 10);
-    obstacle.y = 570;
+    obstacle.y = 545;
     // obstacle.x = random(50,80);
     var ranIma = Math.floor(random(0, 2));
     console.log("random value for onstacle :" + ranIma);

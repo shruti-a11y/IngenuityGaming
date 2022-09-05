@@ -1,0 +1,30 @@
+prerequisites : 
+ 1-javascripts
+    -variable,array,object,function,arrow function and destructing
+
+
+what is typescript?
+ans : programming language to address shortcoming of js.
+-strongly types,object oriented , compiled lang(while js is interprted)
+-it is a superset of the js language
+-it is open source
+
+benefits
+1-static typing
+2-code completion
+3-refactoring
+4-shorthand/new features
+
+differnce b/w statically-types and Dynamically
+
+
+statically-types - need datatype for variable like in java , c++ c#
+eg - int num = 10;
+num = "a" --- wrong
+
+Dynamically - no need of datatype (in js)
+eg - int num = 10;
+num = "a" --- data change
+Math.round(num); --- give NAN
+
+in short TS is just js with check type;
